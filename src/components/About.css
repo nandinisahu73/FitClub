@@ -1,0 +1,11 @@
+/* src/components/About.css */
+.about {
+  text-align: center;
+  background-color: orange;
+  font-style: italic;
+}
+
+.about p {
+  font-size: 18px;
+  font-style: italic;
+}
