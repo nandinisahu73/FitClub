@@ -1,70 +1,115 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/nandinisahu73/FitClub.git).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+# FitClub
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+FitClub is a modern real estate platform built using the MERN stack. It offers users the ability to browse, list, and manage property listings with an integrated authentication system. The project incorporates user authentication  and Google authentication using Firebase.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Authors
+   **Training project (Batch-4)**
 
-### `npm test`
+- **Nandini Sahu**
+  - Roll Number: 22015002299
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://github.com/nandinisahu73/FitClub.git) for more information.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- User authentication 
+- Google authentication via OPERA Browser
+- Create, read, update, and delete property listings
+- Responsive and user-friendly UI
+- State management with Redux Toolkit
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technology Stack
 
-See the section about [deployment](https://github.com/nandinisahu73/FitClub.git/docs/deployment) for more information.
+- **Frontend:**
+  - React-VITE
+  - Redux Toolkit
+  - CSS 
+  - Tailwind CSS
 
-### `npm run eject`
+- **Authentication:**
+  - Firebase (Google Auth)
+  - Custom User Authentication (JWT)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ensure you have the following installed:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js
+- npm or yarn
+- MongoDB
+- Firebase account
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://github.com/nandinisahu73/FitClub.git/docs/getting-started).
+1. Clone the repository:
+   ```bash
+   git clone https://nandinisahu73.github.io/FitClub/
+   cd FitClub
+   
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install the dependencies for both the client and server:
+   ```bash
+   cd client
+   npm install
+   cd ../server
+   npm install
+   ```
 
-### Code Splitting
+3. Set up environment variables:
 
-This section has moved here: [https://github.com/nandinisahu73/FitClub.git/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   Create a `.env` file in the `server` directory and add your MongoDB URI and JWT secret:
 
-### Analyzing the Bundle Size
+   ```plaintext
+   MONGODB_URI=your_mongodb_uri
+   JWT_SECRET=your_jwt_secret
+   ```
 
-This section has moved here: [https://github.com/nandinisahu73/FitClub.git/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   Create a `.env` file in the `client` directory and add your Firebase configuration:
 
-### Making a Progressive Web App
+   ```plaintext
+   REACT_APP_FIREBASE_API_KEY=your_api_key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+   REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+   REACT_APP_FIREBASE_APP_ID=your_app_id
+   ```
 
-This section has moved here: [https://github.com/nandinisahu73/FitClub.git/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Running the Application
 
-### Advanced Configuration
+1. Start the backend server:
+   ```bash
+   cd server
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Start the frontend development server:
+   ```bash
+   cd client
+   npm start
+   ```
 
-### Deployment
+3. Open your browser and navigate to `http://localhost:3000` to see the application in action.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+We welcome contributions to HomeHeaven! Please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Create a new Pull Request
+
+
+
+---
+
+  
